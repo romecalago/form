@@ -1,16 +1,24 @@
 <html>
 <body>
 
-<form action="https://formspree.io/f/meqpnekg" method="POST" enctype="multipart/form-data">
-  <label> Your email:
-    <input type="text" name="_replyto">
-  </label>
-  <label> Your file:
-    <input type="file" name="upload">
-  </label>
 
-  <button type="submit">Send</button>
-</form>
+  
+  <form action="https://formspree.io/f/meqpnekg" method="POST" enctype="multipart/form-data" class="contact__form" id="emailForm">
+
+                    <p class="p-description">
+                        Have a sweet project in mind or just want to say hi? Feel free to send me a message!
+                    </p>
+                    <div class="contact__inputs">
+                        <input type="text" name="name" id="name" placeholder="Name" class="contact__input">
+                        <input type="email" name="email" id="email" placeholder="Email" class="contact__input">
+                        <input type="text" name="subject" id="subject" placeholder="Subject" class="contact__input">
+
+                        <textarea name="message" id="message" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
+                        
+                        <input type="submit" name="submit" value="Send" class="button contact__button" onclick="sendEmail()">
+                        <!-- <button type="button" onclick="sendEmail()" value="Send an EMail">Submit</button> -->
+                    </div>
+                </form>
 
 </body>
 </html>
